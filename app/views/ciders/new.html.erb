@@ -1,0 +1,19 @@
+<div>
+  <h1> Add a Cider </h1>
+
+  <%= form_for @cider do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :brewery_name %>
+    <%= f.text_field :brewery_name %>
+
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+
+    <%= f.label :state %>
+    <%= f.text_field :state %>
+
+    <%= f.submit "Add Cider" %>
+  <% end %>
+</div>
